@@ -1,4 +1,4 @@
-public class st {
+public class js {
     public static void main (String[] args) {
         int a;
         int b;
@@ -8,6 +8,8 @@ public class st {
         double d = 8.5 / 2;
         String msg = "私の年齢は" + 30;
         // 30(int)が"30"(String)に変換されて連結
+        int r = new java.util.Random().nextInt(30);
+        // new java.util.Random().nextInt(30) 29までの数字がランダムで表示される
         a = 100;
         b = a + 50;
         c = a++;
@@ -23,6 +25,7 @@ public class st {
         System.out.println(msg);
         System.out.println(x + "と" + z + "で一番大きい数字は" + m + "です。");
         System.out.println(n);
+        System.out.println(r);
     }
 
 }
