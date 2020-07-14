@@ -7,3 +7,4 @@ public class while1 {
 		}
 	}
 }
+// 何度も繰り返し実行される
