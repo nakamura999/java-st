@@ -2,7 +2,24 @@ package st1;
 
 public class Hero {
 	private int hp;
-	String name;
+	private String name;
+	// getterメソッド　フィールド値を取り出すメソッド
+	public String getName() {
+		return this.name;
+	}
+	// setterメソッド　フィールドに値を代入
+	public void setName(String name) {
+		if (name == null) {
+			throw new IllegalArgumentException("名前がnullである。処理を中断。");
+		}
+		if (name.length() <= 1) {
+			throw new IllegalArgumentException("名前が短すぎます。2文字以上で入力ください。");
+		}
+		if (name.length() >= 8) {
+			throw new IllegalArgumentException("名前が長すぎます。7文字以下に入力してください。");
+		}
+		this.name = name;
+	}
 	Sword sword;
 	static int money;
 	void byr() {
