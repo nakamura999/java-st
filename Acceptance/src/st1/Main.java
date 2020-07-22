@@ -6,5 +6,8 @@ public class Main {
 //		h.setName(""); エラー
 		h.setName("サトシ");
 		System.out.println("勇者の名前は、" + h.getName() + "です");
+		SuperHero sh = new SuperHero();
+		sh.setName("風見");
+		sh.run();
 	}
 }

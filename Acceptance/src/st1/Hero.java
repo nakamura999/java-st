@@ -1,7 +1,7 @@
 package st1;
 
 public class Hero {
-	private int hp;
+	private int hp = 100;
 	private String name;
 	// getterメソッド　フィールド値を取り出すメソッド
 	public String getName() {
@@ -32,6 +32,9 @@ public class Hero {
 	void sleap() {
 		this.hp = 100;
 		System.out.println(this.name + "は眠って回復した。");
+	}
+	void run() {
+		System.out.println("勇者" + this.name + "は逃げた。");
 	}
 	public void attack(Matango m) {
 		System.out.println(this.name + "は攻撃！");
