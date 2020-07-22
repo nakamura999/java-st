@@ -29,11 +29,17 @@ public class Hero {
 		System.out.println(this.name + "は死んでしまった！");
 		System.out.println("GAME OVERです。");
 	}
+	public final void slip() {
+		// final slip()メソッドは、小クラスでオーバーライド禁止。
+		this.hp -= 5;
+		System.out.println(this.getName() + "は転んだ");
+		System.out.println("5のダメージ");
+	}
 	void sleap() {
 		this.hp = 100;
 		System.out.println(this.name + "は眠って回復した。");
 	}
-	void run() {
+	public void run() {
 		System.out.println("勇者" + this.name + "は逃げた。");
 	}
 	public void attack(Matango m) {

@@ -11,4 +11,8 @@ public class SuperHero extends Hero {
 		this.flying = false;
 		System.out.println("着地した！");
 	}
+	public void run() {
+		System.out.println(this.getName() + "は撤退した！");
+		// 親クラスにもrun()は定義されているが、小クラスで再度定義ができる。
+	}
 }
