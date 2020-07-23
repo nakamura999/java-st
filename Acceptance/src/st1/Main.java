@@ -9,5 +9,6 @@ public class Main {
 		SuperHero sh = new SuperHero();
 		sh.setName("風見");
 		sh.run();
+		Weapon w = new Weapon();
 	}
 }
