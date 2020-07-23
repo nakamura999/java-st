@@ -1,6 +1,6 @@
 package st1;
 
-public class Hero {
+public class Hero extends Character {
 	private int hp = 100;
 	private String name;
 	// getterメソッド　フィールド値を取り出すメソッド
