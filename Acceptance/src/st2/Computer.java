@@ -14,5 +14,6 @@ public class Computer {
 	}
 	public String getName() { return this.name;}
 	public int price() { return this.price; }
-
+	public String color() { return this.color; }
+	public String makerNmae() { return this.makerName; }
 }
