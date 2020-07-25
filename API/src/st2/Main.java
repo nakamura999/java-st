@@ -15,6 +15,7 @@ public class Main {
 		c.set(2010,8,22,1,23,45);
 		c.set(Calendar.YEAR, 2011);
 		Date past = c.getTime();
+		System.out.println(past);
 	}
 
 }
