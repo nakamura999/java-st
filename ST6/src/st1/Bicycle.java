@@ -21,4 +21,9 @@ public class Bicycle {
 		System.out.println("走行距離 : " + this.distance + "km");
 	}
 
+	public void run(int run) {
+		System.out.println(run + "km走ります");
+		this.distance += run;
+		System.out.println("走行距離 : " + this.distance + "km");
+	}
 }
