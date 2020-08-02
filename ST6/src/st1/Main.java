@@ -14,6 +14,11 @@ public class Main {
 		int n = scanner.nextInt();
 		bicycle1.run(n);
 //		bicycle1.run(10);
+
+		System.out.println("============");
+		Car car1 = new Car("フェラーリ", "レッド");
+		System.out.println("[車の情報]");
+		car1.printData();
 	}
 
 }
