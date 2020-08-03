@@ -3,6 +3,11 @@ package st1;
 public class  Car extends Vehicle {
 	private int fuel = 50;
 
+	// Carクラスのコンストラクタを定義
+	Car(String name, String color) {
+		super(name,color);
+	}
+
 	public int getFuel() {
 		return this.fuel;
 	}
