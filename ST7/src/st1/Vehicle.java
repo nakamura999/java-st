@@ -3,7 +3,7 @@ package st1;
 public class Vehicle {
 	private String name;
 	private String color;
-	private int distance = 0;
+	protected int distance = 0;
 
 	// Vehicleクラスのコンストラクタを定義
 	Vehicle(String name, String color) {

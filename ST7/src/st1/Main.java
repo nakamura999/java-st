@@ -17,6 +17,9 @@ public class Main {
 		System.out.println("[車の情報]");
 		car.printData();
 		System.out.println("-------------");
+		System.out.println("走る距離を入力してください : ");
+		int carDistance = scanner.nextInt();
+		car.run(carDistance);
 		System.out.println("給油する量を入力してください : ");
 		int litre = scanner.nextInt();
 		car.charge(litre);
@@ -24,6 +27,10 @@ public class Main {
 		System.out.println("===========");
 		System.out.println("[自動車の情報]");
 		bicycle.printData();
+		System.out.println("-------------");
+		System.out.println("走る距離を入力してください : ");
+		int bicycleDistance = scanner.nextInt();
+		bicycle.run(bicycleDistance);
 	}
 
 }
