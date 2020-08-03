@@ -15,12 +15,11 @@ public class Main {
 		bicycle.setColor("緑");
 
 		System.out.println("[車の情報]");
-		System.out.println("ガソリンの量" + car.getFuel() + "L");
+		car.printData();
 		System.out.println("-------------");
 		System.out.println("給油する量を入力してください : ");
 		int litre = scanner.nextInt();
 		car.charge(litre);
-//		car.printData();
 
 		System.out.println("===========");
 		System.out.println("[自動車の情報]");
