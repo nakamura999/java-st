@@ -1,4 +1,4 @@
-package st1;
+package st2;
 
 public class Car {
 	private String name;
@@ -32,6 +32,19 @@ public class Car {
 			System.out.println("ガソリンがたりません");
 		}
 		System.out.println("走行距離 : " + this.distance + "km");
+		System.out.println("ガソリン量 : " + this.fuel + "L");
+	}
+
+	public void charge(int charge) {
+		System.out.println(charge + "L給油します");
+		if (charge <= 0) {
+			System.out.println("給油できません");
+		} else if (charge + this.fuel >= 100) {
+			System.out.println("満タンまで給油します");
+			this.fuel = 100;
+		} else {
+			this.fuel += charge;
+		}
 		System.out.println("ガソリン量 : " + this.fuel + "L");
 	}
 }
