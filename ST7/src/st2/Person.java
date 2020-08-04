@@ -41,11 +41,15 @@ public class Person {
 	    return this.weight / this.height / this.height;
 	  }
 
-	  public void buy(Car car) {
-		  car.setOwner(this);
-	  }
+//	  public void buy(Car car) {
+//		  car.setOwner(this);
+//	  }
+//
+//	  public void buy(Bicycle bicycle) {
+//		  bicycle.setOwner(this);
+//	  }
 
-	  public void buy(Bicycle bicycle) {
-		  bicycle.setOwner(this);
+	  public void buy(Vehicle vehicle) {
+		  vehicle.setOwner(this);
 	  }
 }
