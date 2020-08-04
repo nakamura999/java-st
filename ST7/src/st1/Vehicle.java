@@ -1,9 +1,10 @@
 package st1;
 
-public class Vehicle {
+public abstract class Vehicle {
 	private String name;
 	private String color;
 	protected int distance = 0;
+	private Person owner;
 
 	// Vehicleクラスのコンストラクタを定義
 	Vehicle(String name, String color) {
@@ -23,6 +24,10 @@ public class Vehicle {
 		return this.distance;
 	}
 
+	public Person getOwner() {
+		return this.owner;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -31,10 +36,17 @@ public class Vehicle {
 		this.color = color;
 	}
 
+	public void setOwner(Person person) {
+		this.owner = person;
+	}
+
 	public void printData() {
 		System.out.println("名前 : " + this.name);
 		System.out.println("色 : " + this.color);
 		System.out.println("走行距離" + this.distance + "km");
 	}
+
+	// 抽象メソッドrunを定義
+	abstract public void run(int distance);
 
 }
