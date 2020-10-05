@@ -2,6 +2,7 @@ package St8;
 
 public class Main {
 	public static void main(String[] args) {
+		System.out.println("==SampleClass01==");
 		SampleClass01 s1, s2;
 		s1 = new SampleClass01();
 		s2 = new SampleClass01();
@@ -14,11 +15,18 @@ public class Main {
 		s1.showNum();
 		s2.showNum();
 
-		System.out.println("===================");
+		System.out.println("==SampleClass02==");
 
 		SampleClass02 z = new SampleClass02();
 		z.method2();
 		z.method3();
 		// numは、privateフィールドなので外部からアクセスできない
+
+		System.out.println("==SampleClass03==");
+
+		SampleClass03 y = new SampleClass03("HelloWorld");
+		y.setNumber(100);
+		System.out.println(y.getNumber());
+		System.out.println(y.getStr());
 	}
 }
