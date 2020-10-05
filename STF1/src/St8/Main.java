@@ -28,5 +28,8 @@ public class Main {
 		y.setNumber(100);
 		System.out.println(y.getNumber());
 		System.out.println(y.getStr());
+
+		System.out.println("==SampleClass04==");
+		SampleClass04 e = new SampleClass04();
 	}
 }
