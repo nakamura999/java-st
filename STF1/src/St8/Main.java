@@ -13,5 +13,12 @@ public class Main {
 		System.out.println(s2.add("えお"));
 		s1.showNum();
 		s2.showNum();
+
+		System.out.println("===================");
+
+		SampleClass02 z = new SampleClass02();
+		z.method2();
+		z.method3();
+		// numは、privateフィールドなので外部からアクセスできない
 	}
 }
