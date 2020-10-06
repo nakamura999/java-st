@@ -9,8 +9,8 @@ public class SampleClass04 {
 	    d[2] = 8;
 	    d[3] = 1.8;
 	    for (int i = 0; i < 4; i++) {
-	    	System.out.println(d[i]);
+	    	System.out.print("d[" + i + "]=" + d[i] + " ");
 	    }
+	    System.out.println("");
 	}
-
 }
