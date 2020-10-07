@@ -3,7 +3,6 @@ package St8;
 
 public class SampleClass13 {
 	int[] data = new int[7];
-	String A = "*";
 	public SampleClass13() {
 		System.out.println("問題10");
 		for (int i = 0; i < data.length; i++) {
