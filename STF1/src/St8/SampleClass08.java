@@ -12,7 +12,7 @@ public class SampleClass08 {
 	    }
 	    System.out.println();
 
-	    System.out.println("3の倍数 : ");
+	    System.out.print("3の倍数 : ");
 	    for (int i = 0; i < data.length; i++) {
 	    	if (data[i] % 3 == 0) {
 	    		System.out.print(data[i] + " ");
@@ -20,7 +20,7 @@ public class SampleClass08 {
 	    }
 	    System.out.println();
 
-	    System.out.println("３の倍数以外の数 : ");
+	    System.out.print("３の倍数以外の数 : ");
 	    for (int i = 0; i < data.length; i++) {
 	    	if (data[i] % 3 != 0) {
 	    		System.out.print(data[i] + " ");
