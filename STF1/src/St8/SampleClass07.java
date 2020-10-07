@@ -1,9 +1,9 @@
 package St8;
 
-public class SampleClass06 {
+public class SampleClass07 {
 	int[] data = new int[10];
-	public SampleClass06() {
-		System.out.println("問題3");
+	public SampleClass07() {
+		System.out.println("問題4");
 	    for (int i = 0; i < data.length; i++) {
 	    	// 1~100ランダム
 	    	data[i] = (int) (Math.random() * 100) + 1;
@@ -13,17 +13,17 @@ public class SampleClass06 {
 	    }
 	    System.out.println();
 
-	    System.out.print("奇数: ");
+	    System.out.print("50以上の数: ");
 	    for (int i = 0; i < data.length; i++) {
-	    	if (data[i] % 2 != 0) {
+	    	if (data[i] >= 50) {
 	    		System.out.print(data[i] + " ");
 	    	}
 	    }
 	    System.out.println();
 
-	    System.out.print("偶数: ");
+	    System.out.print("50以下の数: ");
 	    for (int i = 0; i< data.length; i++) {
-	    	if (data[i] % 2 == 0) {
+	    	if (data[i] < 50) {
 	    		System.out.print(data[i] + " ");
 	    	}
 	    }
