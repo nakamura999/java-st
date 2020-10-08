@@ -58,5 +58,8 @@ public class Main {
 
 		System.out.println("==SampleClass013==");
 		SampleClass13 l = new SampleClass13();
+
+		System.out.println("==SampleClass014==");
+		SampleClass14 m = new SampleClass14();
 	}
 }
