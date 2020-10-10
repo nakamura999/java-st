@@ -8,7 +8,7 @@ public class Problem {
 		int result = add(a,b);
 		int subtraction = sub(a,b);
 		System.out.println("a = " + a);
-		System.out.println("a = " + b);
+		System.out.println("b = " + b);
 		System.out.println(a + " + " + b + " = " + result);
 		System.out.println(a + " - " + b + " = " + subtraction);
 	}
