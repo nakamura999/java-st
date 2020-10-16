@@ -22,6 +22,7 @@ public class SampleClass {
         for(int i = 0; i < 10; i++){
             result[i] = "";
             for(int j = 0; j < numbers.size(); j++){
+            	// 10で割り、余りi
                 if(numbers.get(j) % 10 == i){
                     result[i] += Integer.toString(numbers.get(j)) + " ";
                 }
@@ -29,7 +30,7 @@ public class SampleClass {
         }
         // 結果表示
         for(int i = 0; i < 10; i++){
-            System.out.printf("1の位が%dのもの",i);
+            System.out.printf("1の位が%d : ",i);
             System.out.println(result[i]);
         }
     }
