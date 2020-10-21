@@ -28,7 +28,7 @@ public class Main {
         }finally{
             try{
                 if(fw != null){
-                    fw.close();         // ファイルクローズ
+                    fw.close();        // ファイルクローズ
                 }
                 if(fr != null){
                     fr.close();         // ファイルクローズ
